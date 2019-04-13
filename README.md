@@ -1,11 +1,13 @@
 # ordinal-spanish
-Module to provide the Spanish ordinal letters following a numeral.
+English - Module to provide the Spanish ordinal letters following a numeral and gender.
+
+Spanish - Módulo que permite la obtención de números ordinales mediante un número y el género.
 
 
 ## Installation 
 
 ```sh
-$ npm install
+$ npm install ordinal-spanish
 ```
 
 ## Usage
