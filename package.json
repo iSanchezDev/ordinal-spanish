@@ -1,10 +1,10 @@
 {
   "name": "ordinal-spanish",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "license": "MIT",
   "engine": "node >= 10.14.x",
   "main": "dist/index.js",
-  "description": "Spanish ordinal letters following a numeral.",
+  "description": "Spanish ordinal numbers following a numeral.",
   "author": "Ivan Sanchez",
   "contributors": [
     {
