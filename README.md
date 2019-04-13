@@ -1,13 +1,4 @@
-# Ordinal Spanish
-
+## ordinal-spanish
 Module to provide the Spanish ordinal letters following a numeral
 
-# Install
-
-```sh 
-npm install ordinal-spanish
-```
-
-# Usage
-
-Work in progress
+*Build by [create-typescript-library](https://github.com/ryancat/create-typescript-library)*
