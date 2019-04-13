@@ -4,4 +4,4 @@
 
 const ordinal = require('./dist/index');
 
-console.log(ordinal(610));
+console.log(ordinal(785, 'female'));
