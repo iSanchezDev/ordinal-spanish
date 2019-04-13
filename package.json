@@ -4,7 +4,7 @@
   "license": "MIT",
   "engine": "node >= 10.14.x",
   "main": "dist/index.js",
-  "description": "Module to provide the Spanish ordinal letters following a numeral.",
+  "description": "Spanish ordinal letters following a numeral.",
   "author": "Ivan Sanchez",
   "contributors": [
     {
@@ -34,18 +34,20 @@
     "build": "rimraf dist/ && babel src/ --out-dir dist/",
     "test": "./node_modules/.bin/jest",
     "check": "./node_modules/.bin/npm-check -u",
-    "example": "node example.js",
+    "example": "npm run build && node example.js",
+    "example:debug": "node --inspect=5858 src/index.ts",
     "prepare": "npm run clean && npm run lint && npm run test && npm run build",
     "pub": "./node_modules/.bin/np || true"
   },
   "devDependencies": {
-    "babel-cli": "6.26.0",
-    "babel-core": "6.26.3",
-    "babel-eslint": "8.2.3",
-    "babel-jest": "22.4.3",
-    "babel-plugin-transform-class-properties": "6.24.1",
-    "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "babel-preset-env": "1.7.0",
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/plugin-proposal-class-properties": "^7.0.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-eslint": "^9.0.0",
+    "babel-jest": "^23.4.2",
     "eslint": "4.19.1",
     "eslint-config-airbnb": "16.1.0",
     "eslint-config-prettier": "2.9.0",
@@ -60,5 +62,6 @@
   },
   "prettier": {
     "singleQuote": true
-  }
+  },
+  "dependencies": {}
 }
