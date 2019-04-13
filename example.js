@@ -4,4 +4,4 @@
 
 const ordinal = require('./dist/index');
 
-console.log(ordinal(10));
+console.log(ordinal(610));
