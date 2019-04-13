@@ -1,6 +1,6 @@
 {
   "name": "ordinal-spanish",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "MIT",
   "engine": "node >= 10.14.x",
   "main": "dist/index.js",
