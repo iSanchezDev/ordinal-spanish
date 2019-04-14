@@ -8,7 +8,7 @@ function ordinal (number, gender = 'male') {
         throw new TypeError(`Expected Number, got ${(typeof number)} ${number}`);
     }
 
-    if (!(number >= 1 && number <= 1000)) {
+    if (!(number >= 1 && number <= 9999)) {
         throw new TypeError(`Expected Number between 1 and 1000, got ${number}`);
     }
 

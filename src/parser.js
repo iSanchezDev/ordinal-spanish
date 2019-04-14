@@ -122,5 +122,36 @@ export function getHundreds (n, g) {
 }
 
 export function getThousands (n, g) {
-    return `milésim${g}`;
+    let value = '';
+    switch (n) {
+        case 1:
+            value = 'milésim';
+            break;
+        case 2:
+            value = 'dosmilésim';
+            break;
+        case 3:
+            value = 'tresmilésim';
+            break;
+        case 4:
+            value = 'cuatromilésim';
+            break;
+        case 5:
+            value = 'cincomilésim';
+            break;
+        case 6:
+            value = 'seismilésim';
+            break;
+        case 7:
+            value = 'sietemilésim';
+            break;
+        case 8:
+            value = 'ochomilésim';
+            break;
+        case 9:
+            value = 'nuevemilésim';
+            break;
+        default:
+    }
+    return `${value}${g}`;
 }

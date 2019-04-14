@@ -17,13 +17,13 @@ import ordinal from 'ordinal-spanish';
 ordinal(number, gender); 
 ```
 
-- *Numbers can be between `1 and 1000`*
+- *Numbers can be between `1 and 9999`*
 
 - *Gender is assignable to `male` (default) or `female`.*
 
 ## Example
 ```
-ordinal(785, 'female');
+ordinal(8763, 'female');
 
-=> septingentésima octogésima quinta
+=> ochomilésima septingentésima sexagésima tercera
 ```
