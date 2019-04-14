@@ -13,6 +13,7 @@ export function concatOrdinal(ordinal, value) {
 /**
  * @description Get units of a number and concat the current gender
  * @param n number input
+ * @param g gender to concat the last word
  * */
 export function getUnit (n, g) {
     let value = '';
