@@ -1,13 +1,13 @@
 # ordinal-spanish
-Module to provide the Spanish ordinal letters following a numeral.
+English - Module to provide the Spanish ordinal letters following a numeral and gender.
 
-[![npm version](https://badge.fury.io/js/0.1.0.svg)](https://badge.fury.io/js/0.1.0)
+Spanish - Módulo que permite la obtención de números ordinales mediante un número y el género.
 
 
 ## Installation 
 
 ```sh
-$ npm install
+$ npm install ordinal-spanish
 ```
 
 ## Usage
@@ -17,13 +17,13 @@ import ordinal from 'ordinal-spanish';
 ordinal(number, gender); 
 ```
 
-- *Numbers can be between `1 and 1000`*
+- *Numbers can be between `1 and 9999`*
 
 - *Gender is assignable to `male` (default) or `female`.*
 
 ## Example
 ```
-ordinal(785, 'female');
+ordinal(8763, 'female');
 
-=> septingentésima octogésima quinta
+=> ochomilésima septingentésima sexagésima tercera
 ```

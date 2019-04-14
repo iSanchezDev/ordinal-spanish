@@ -15,17 +15,16 @@ import {
  * */
 export default function converter (number, gender) {
 
-    let value;
-    let ordinal = '';
-    const numPattern = /^[1-9]$/;
-    const numbers = number.toString();
-    const numListRev = numbers.split('').map((s) => parseFloat(s)).reverse();
+    let value, ordinal = '';
+    const pattern = /^[1-9]$/;
+    const numberStr = number.toString();
+    const numListRev = numberStr.split('').map((s) => parseFloat(s)).reverse();
 
     const g = gender === 'female' ? 'a' : 'o';
 
-    for(let i = numbers.length; i > 0; i--) {
+    for(let i = numberStr.length; i > 0; i--) {
         const n = numListRev[i-1];
-        if (numPattern.test(n.toString())) {
+        if (pattern.test(n.toString())) {
             if (i === 4) {
                 value = getThousands(n, g);
             } else if (i === 3) {
