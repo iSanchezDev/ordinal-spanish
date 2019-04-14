@@ -2,7 +2,7 @@
 
 import ordinal from '../src/index';
 
-describe('developer tests', () => {
+describe('developer numbers tests', () => {
 
   test('Units', () => {
     expect(ordinal(1)).toEqual('primero');
@@ -26,6 +26,7 @@ describe('developer tests', () => {
     expect(ordinal(70)).toEqual('septuagésimo');
     expect(ordinal(80)).toEqual('octogésimo');
     expect(ordinal(90)).toEqual('nonagésimo');
+    expect(ordinal(95)).toEqual('nonagésimo quinto');
   });
 
   test('Hundreds', () => {
@@ -38,9 +39,19 @@ describe('developer tests', () => {
     expect(ordinal(700)).toEqual('septingentésimo');
     expect(ordinal(800)).toEqual('octigentésimo');
     expect(ordinal(900)).toEqual('noningentésimo');
+    expect(ordinal(995)).toEqual('noningentésimo nonagésimo quinto');
   });
 
   test('Thousands', () => {
     expect(ordinal(1000)).toEqual('milésimo');
+    expect(ordinal(2000)).toEqual('dosmilésimo');
+    expect(ordinal(3000)).toEqual('tresmilésimo');
+    expect(ordinal(4000)).toEqual('cuatromilésimo');
+    expect(ordinal(5000)).toEqual('cincomilésimo');
+    expect(ordinal(6000)).toEqual('seismilésimo');
+    expect(ordinal(7000)).toEqual('sietemilésimo');
+    expect(ordinal(8000)).toEqual('ochomilésimo');
+    expect(ordinal(9000)).toEqual('nuevemilésimo');
+    expect(ordinal(9995)).toEqual('nuevemilésimo noningentésimo nonagésimo quinto');
   });
 });
