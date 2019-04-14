@@ -42,5 +42,13 @@ describe('developer tests', () => {
 
   test('Thousands', () => {
     expect(ordinal(1000)).toEqual('milésimo');
+    expect(ordinal(2000)).toEqual('dosmilésimo');
+    expect(ordinal(3000)).toEqual('tresmilésimo');
+    expect(ordinal(4000)).toEqual('cuatromilésimo');
+    expect(ordinal(5000)).toEqual('cincomilésimo');
+    expect(ordinal(6000)).toEqual('seismilésimo');
+    expect(ordinal(7000)).toEqual('sietemilésimo');
+    expect(ordinal(8000)).toEqual('ochomilésimo');
+    expect(ordinal(9000)).toEqual('nuevemilésimo');
   });
 });
